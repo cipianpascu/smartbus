@@ -1,0 +1,332 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titleimg" >
+
+        <ImageView
+            android:id="@+id/backImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/zoneNametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=" Central Lights "
+             android:textColor="#F8983f"
+             android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/macro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lightsmenu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+        
+        <com.roka.smarthomeg4.wheel.WheelView
+            android:id="@+id/centralLightwheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Selected Item"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selectedCentralText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Item"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F8983f"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="20dp" >
+
+                    <Button
+                        android:id="@+id/allLightOnBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cancel"
+                        android:text="   ALL ON   "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/allLightOnprogress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/allLightOnBtn"
+                        android:layout_toLeftOf="@+id/allLightOnText"
+                        android:visibility="invisible"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/allLightOnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/allLightOnBtn"
+                        android:text="100%"
+                        android:visibility="invisible"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RelativeLayout>
+                
+                
+                
+                  <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="70dp" >
+
+                    <Button
+                        android:id="@+id/allLightOffBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cancel"
+                        android:text="   ALL OFF   "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/allLightOffProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/allLightOffBtn"
+                        android:layout_toLeftOf="@+id/allLightOffText"
+                        android:visibility="invisible"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/allLightOffText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/allLightOffBtn"
+                        android:text="100%"
+                        android:visibility="invisible"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="20dp" >
+
+                    <Button
+                        android:id="@+id/allLightOn25Btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cancel"
+                        android:text="  25%   "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/allLightOn25progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/allLightOn25Btn"
+                        android:visibility="invisible"
+                        android:layout_toLeftOf="@+id/allLightOn25BtnText"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/allLightOn25BtnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/allLightOn25Btn"
+                        android:text="100%"
+                        android:visibility="invisible"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RelativeLayout>
+                
+                
+                
+                  <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="70dp" >
+
+                    <Button
+                        android:id="@+id/allLightOn50Btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cancel"
+                        android:text="   50%   "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/allLightOn50progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:visibility="invisible"
+                        android:layout_below="@+id/allLightOn50Btn"
+                        android:layout_toLeftOf="@+id/allLightOn50Text"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/allLightOn50Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/allLightOn50Btn"
+                        android:text="100%"
+                        android:visibility="invisible"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="20dp" >
+
+                    <Button
+                        android:id="@+id/allLightOn75Btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cancel"
+                        android:text="  75%   "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/allLightOn75progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/allLightOn75Btn"
+                        android:visibility="invisible"
+                        android:layout_toLeftOf="@+id/allLightOn75Text"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/allLightOn75Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/allLightOn75Btn"
+                        android:text="100%"
+                        android:visibility="invisible"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RelativeLayout>
+                
+                
+                
+                  <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="70dp"
+                     >
+
+                   
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/zitiwen" 
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <!--    android:background="@anim/splash_line" -->
+      
+       <View
+        android:id="@+id/activity_logo_center"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_centerInParent="true" />
+      <ImageView
+        android:id="@+id/imageViewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         
+         android:contentDescription="@string/app_name"
+        android:src="@drawable/wenzi" /> 
+        
+        <ImageView
+        android:id="@+id/activity_logo_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:contentDescription="@string/app_name" />
+    </LinearLayout>
+   
+     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/gezi" 
+        android:layout_weight="2"/>
+
+    
+
+</LinearLayout>

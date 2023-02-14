@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Bass  "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/BassMinusbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/controlbtnbackimg"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text=" - " />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/BasstextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" 0 "
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <SeekBar
+                android:id="@+id/BassSeekBar"
+                android:layout_width="match_parent"
+                 android:clickable="false"
+                 android:max="14"
+                 android:progress="7"
+                 android:thumb="@drawable/slider_thum3"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Bassplusbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/controlbtnbackimg"
+            android:text=" + " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Treble"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/TrebleMinusbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/controlbtnbackimg"
+            android:text=" - " />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/TrebleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:text=" 0 "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <SeekBar
+                android:id="@+id/TrebleSeekBar"
+                android:layout_width="match_parent"
+                android:clickable="false"
+                android:max="14"
+                android:progress="7"
+                android:thumb="@drawable/slider_thum3"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/TreblePlusbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/controlbtnbackimg"
+            android:text=" + " />
+    </LinearLayout>
+
+</LinearLayout>

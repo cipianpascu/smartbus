@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="selected_image_z_audio_width">110dp</dimen>
+    <dimen name="un_selected_image_z_audio_width">60dp</dimen>
+    <dimen name="image_z_audio_high">40dp</dimen>
+    
+    
+      <dimen name="selected_image_media_width">80dp</dimen>
+    <dimen name="un_selected_image_media_width">50dp</dimen>
+
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+<!--         <RelativeLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@drawable/titleimg" > -->
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/backImageView" -->
+<!--                  android:layout_width="50dp" -->
+<!--                 android:layout_height="50dp" -->
+<!--                 android:layout_alignParentLeft="true" -->
+<!--                 android:layout_centerVertical="true" -->
+<!--                 android:src="@drawable/back" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/zoneNametext" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_centerHorizontal="true" -->
+<!--                 android:layout_centerVertical="true" -->
+<!--                 android:text="Medium Text" -->
+<!--                 android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+            
+<!--             <ImageView -->
+<!--                 android:id="@+id/mainImageViewChange" -->
+<!--                 android:layout_width="50dp" -->
+<!--                 android:layout_height="50dp" -->
+<!--                 android:layout_alignParentRight="true" -->
+<!--                 android:layout_centerVertical="true" -->
+<!--                 android:scaleType="fitXY"  -->
+<!--                 android:visibility="gone"/> -->
+<!--         </RelativeLayout> -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrol"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/tabbarbg"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbarbg"
+                android:fadingEdge="@null"
+                android:scrollbars="none" >
+
+                <RadioGroup
+                    android:id="@+id/main_tab_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tabbarbg"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    
+                   
+                    <RadioButton
+                        android:id="@+id/main_tab_light"
+                        style="@style/MMTabButton"
+                        android:checked="true"
+                         android:layout_height="match_parent"
+                        android:drawableTop="@drawable/light_tab"
+                        android:text="Light" />
+
+                    <RadioButton
+                        android:id="@+id/main_tab_hvac"
+                        style="@style/MMTabButton"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/hvac_tab"
+                        android:text="HVAC" />
+
+                    <RadioButton
+                        android:id="@+id/main_tab_zaudio"
+                        style="@style/MMTabButton"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/zaudio_tab"
+                        android:text="Z-Audio" />
+
+                  
+
+                    <RadioButton
+                        android:id="@+id/main_tab_curtain"
+                        style="@style/MMTabButton"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/current_tab"
+                        android:text="curtain" />
+                    
+                       <RadioButton
+                        android:id="@+id/main_tab_media"
+                        style="@style/MMTabButton"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/media_tab"
+                        android:text="Media" />
+                      
+
+                    <RadioButton
+                        android:id="@+id/main_tab_moods"
+                        style="@style/MMTabButton"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/moods_tab"
+                        android:text="Moods" />
+
+                    <RadioButton
+                        android:id="@+id/main_tab_fan"
+                        style="@style/MMTabButton"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/fan_tab"
+                        android:text="fan" />
+
+                    <!-- <RadioButton -->
+                    <!-- android:id="@+id/main_tab_android_tv" -->
+                    <!-- style="@style/MMTabButton" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:drawableTop="@drawable/tv_tab" -->
+                    <!-- android:text="TV" /> -->
+
+
+                    <!-- <RadioButton -->
+                    <!-- android:id="@+id/main_tab_xbmc" -->
+                    <!-- style="@style/MMTabButton" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:drawableTop="@drawable/xmbc_tab" -->
+                    <!-- android:text="XBMC" /> -->
+
+
+                </RadioGroup>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

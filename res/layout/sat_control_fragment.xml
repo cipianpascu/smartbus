@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/controlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mediasattitlebtn_b"
+            android:text="  Control  " />
+
+        <Button
+            android:id="@+id/channelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_normal"
+            android:text="  Channel  " />
+
+        <Button
+            android:id="@+id/numButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_normal"
+            android:text="  Num Pad  " />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/controlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/stabackgroundimg"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/midforbtnimg" >
+
+            <TextView
+                android:id="@+id/okSatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Ok"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/upchannelSatBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icons_10" />
+
+            <Button
+                android:id="@+id/downChannelSatBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icons_14" />
+
+            <Button
+                android:id="@+id/volPlusSatBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:text="V+" />
+
+            <Button
+                android:id="@+id/volMinusSatBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:text="V-" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/onSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="ON"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/offSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="OFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/favSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="Fav."
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/menuSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tvbtnbg"
+                android:text="Menu"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/preSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="pre"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/nextSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="next"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/recordSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="Rec"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/stopSatBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tvbtnbg"
+                android:text="stop"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/numLatout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/stabackgroundimg"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/num1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 1 " />
+
+                    <Button
+                        android:id="@+id/num2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 2 " />
+
+                    <Button
+                        android:id="@+id/num3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 3 " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/num4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 4 " />
+
+                    <Button
+                        android:id="@+id/num5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 5 " />
+
+                    <Button
+                        android:id="@+id/num6"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 6 " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/num7"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 7 " />
+
+                    <Button
+                        android:id="@+id/num8"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 8 " />
+
+                    <Button
+                        android:id="@+id/num9"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 9 " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/num0"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" 0 " />
+
+                    <Button
+                        android:id="@+id/numok"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/controlbtnbackimg"
+                        android:text=" ok " />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channelLatout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/stabackgroundimg"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+       
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_normal"
+                android:text=" Category " />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_normal"
+                android:text=" Channel " />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_normal"
+                android:singleLine="true"
+                android:text=" Delay For IR " />
+        </LinearLayout>
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true" >
+
+            <ListView
+                android:id="@+id/categoryListview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:dividerHeight="0dp"
+               >
+            </ListView>
+
+            
+            <GridView
+                android:id="@+id/channelGridVew"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:numColumns="auto_fit"
+                android:layout_height="match_parent"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="5dp"
+               
+               >
+            </GridView>
+            
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

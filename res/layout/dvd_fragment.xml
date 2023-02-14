@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/stabackgroundimg" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/midforbtnimg" >
+
+            <TextView
+                android:id="@+id/okDVDText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Ok"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/upDVDBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icons_29" />
+
+            <Button
+                android:id="@+id/downDVDBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icons_31" />
+
+            <Button
+                android:id="@+id/increaseDVDBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icons_08"
+                />
+
+            <Button
+                android:id="@+id/decreaseDVDBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               android:background="@drawable/icons_05"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/onDVDBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="ON"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/offDVDBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="OFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/menuDVDBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg"
+                android:text="Menu"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tvbtnbg" >
+
+                <Button
+                    android:id="@+id/playDVDBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/player_landscape_btn_next_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="18dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/tvbtnbg" >
+
+                <Button
+                    android:id="@+id/preDVDBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:background="@drawable/player_landscape_btn_play_pressed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg" >
+
+                <Button
+                    android:id="@+id/nextDVDBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:background="@drawable/player_landscape_btn_previous_pressed"/>
+            </LinearLayout>
+            
+              <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tvbtnbg" >
+
+                <Button
+                    android:id="@+id/recordDVDBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:background="@drawable/player_landscape_btn_previous_normal"/>
+            </LinearLayout>
+            
+                <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/tvbtnbg" >
+
+                <Button
+                    android:id="@+id/stopDVDBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:background="@drawable/player_landscape_btn_pause_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

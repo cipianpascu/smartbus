@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/titleimg" >
+
+            <ImageView
+                android:id="@+id/backImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/zoneNametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/musicTitle"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/mainImageViewChange"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/zones"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:background="@drawable/bg"/>
+
+       
+
+            <RadioGroup
+                android:id="@+id/main_tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbarbg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/main_tab_music"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:drawableTop="@drawable/zaudio_zone_tab"
+                    android:button="@null"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Z-Audio" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_record"
+                    android:gravity="center_horizontal"
+                    android:button="@null"
+                    android:checked="false"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/zaudio_record_tab"
+                    android:layout_width="wrap_content"
+                    android:text=" Record " />
+            </RadioGroup>
+        </LinearLayout>

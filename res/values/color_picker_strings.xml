@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   this is string for color dialog  -->
+    <string name="hello" translatable="false">Hello World, Main!</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker" translatable="false">Color Picker</string>
+    <string name="press_color_to_apply" translatable="false">Press on Color to apply</string>    
+    
+    <!-- Preferences -->
+    <string name="pref_category" translatable="false">Category</string>
+    <string name="color1_title" translatable="false">Color 1</string>
+    <string name="color1_summary" translatable="false">black color by default, set by reference</string>
+    <string name="color2_title" translatable="false">Color 2</string>
+    <string name="color2_summary" translatable="false">not persistent color\nalpha slider added via code</string>
+    <string name="color3_title" translatable="false">Color 3</string>
+    <string name="color3_summary" translatable="false">picker with alpha slider</string>
+    <string name="color4_title" translatable="false">Color 4</string>
+    <string name="color4_summary" translatable="false">color set with HEX code in xml</string>
+    <string name="helptext" translatable="false">Welcom To Smart Home \n 1- You can check our Smart Home  Application using Demo Button \n 2- You Can Contact With Company To Establish Your System First and then Enter to your system  </string>
+</resources>

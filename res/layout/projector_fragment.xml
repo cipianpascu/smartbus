@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/stabackgroundimg" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/midforbtnimg" >
+
+            <TextView
+                android:id="@+id/okProjectorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Ok"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/upProjectorBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icons_29" />
+
+            <Button
+                android:id="@+id/downProjectorBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icons_31" />
+
+            <Button
+                android:id="@+id/nextProjectorBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icons_07"
+                />
+
+            <Button
+                android:id="@+id/previousProjectorBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icons_30"
+                 />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sourceProjectorBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/relativeLayout1"
+            android:layout_below="@+id/relativeLayout1"
+            android:background="@drawable/tvbtnbg"
+            android:text="Source"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/offProjectorBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_alignRight="@+id/relativeLayout1"
+            android:background="@drawable/tvbtnbg"
+            android:text="OFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/onProjectorBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@+id/offProjectorBtn"
+            android:layout_alignBottom="@+id/offProjectorBtn"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:background="@drawable/tvbtnbg"
+            android:text="ON"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/menuProjectorBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@+id/sourceProjectorBtn"
+            android:layout_alignBottom="@+id/sourceProjectorBtn"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:background="@drawable/tvbtnbg"
+            android:text="Menu"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

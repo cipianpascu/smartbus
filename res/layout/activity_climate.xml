@@ -1,0 +1,445 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titleimg" >
+
+        <ImageView
+            android:id="@+id/backImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/zoneNametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=" Climate "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#F8983f"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/macro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/climate" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <com.roka.smarthomeg4.wheel.WheelView
+            android:id="@+id/centralLightwheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/linearLayout11"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            
+                            >
+
+                            <ImageView
+                                android:id="@+id/allOnClimateBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/on_114"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/mooydNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/allOnClimateBtn"
+                                android:layout_centerHorizontal="true"
+                                android:singleLine="true"
+                                android:text="All AC ON"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/allOnClimateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/linearLayout11"
+                            android:text="100%"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:visibility="invisible" />
+
+                        <ProgressBar
+                            android:id="@+id/allOnClimateprogress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignTop="@+id/allOnClimateText"
+                            android:layout_toLeftOf="@+id/allOnClimateText"
+                            android:max="100"
+                            android:visibility="invisible" />
+
+                    </RelativeLayout>
+
+                   <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/linearLayout12"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                           
+                            >
+
+                            <ImageView
+                                android:id="@+id/allOffClimateImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/off_114"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/mooydNadmeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/allOffClimateImage"
+                                android:layout_centerHorizontal="true"
+                                android:singleLine="true"
+                                android:text="All AC OFF"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/allOffClimateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/linearLayout12"
+                            android:text="100%"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:visibility="invisible" />
+
+                        <ProgressBar
+                            android:id="@+id/allOffClimateprogress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignTop="@+id/allOffClimateText"
+                            android:layout_toLeftOf="@+id/allOffClimateText"
+                            android:max="100"
+                            android:visibility="invisible" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right" >
+
+                        <RelativeLayout
+                            android:id="@+id/coldLayout"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radiobtn"
+                            android:padding="2dp" >
+
+                            <TextView
+                                android:id="@+id/moodNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:singleLine="true"
+                                android:text="Cold"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/moodImageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/cold"
+                                android:scaleType="fitXY" />
+                        </RelativeLayout>
+
+                        <ProgressBar
+                            android:id="@+id/coldprogress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/coldLayout"
+                            android:layout_toLeftOf="@+id/coldText"
+                            android:max="100"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/coldText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/coldLayout"
+                            android:text="100%"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="70dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/coolLayout"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radiobtn"
+                            android:padding="2dp" >
+
+                            <TextView
+                                android:id="@+id/moodNameTdextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:singleLine="true"
+                                android:text="CooL"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/mooddImageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/cool"
+                                android:scaleType="fitXY" />
+                        </RelativeLayout>
+
+                        <ProgressBar
+                            android:id="@+id/coolProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/coolLayout"
+                            android:layout_toLeftOf="@+id/coolText"
+                            android:max="100"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/coolText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/coolLayout"
+                            android:text="100%"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="20dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/hotLayout"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radiobtn"
+                            android:padding="2dp" >
+
+                            <TextView
+                                android:id="@+id/moodNddameTdextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:singleLine="true"
+                                android:text="Hot"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/mooddwImageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/hot"
+                                android:scaleType="fitXY" />
+                        </RelativeLayout>
+
+                        <ProgressBar
+                            android:id="@+id/hotProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/hotLayout"
+                            android:layout_toLeftOf="@+id/hotText"
+                            android:max="100"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/hotText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/hotLayout"
+                            android:text="100%"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="70dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/warmLayout"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radiobtn"
+                            android:padding="2dp" >
+
+                            <TextView
+                                android:id="@+id/moodNddadfmeTdextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:singleLine="true"
+                                android:text="Warm"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/mooddwImfageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/warm"
+                                android:scaleType="fitXY" />
+                        </RelativeLayout>
+
+                        <ProgressBar
+                            android:id="@+id/warmProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/warmLayout"
+                            android:layout_toLeftOf="@+id/texdtView32"
+                            android:max="100"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/warmText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/warmLayout"
+                            android:text="100%"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

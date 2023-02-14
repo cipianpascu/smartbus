@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/com/roka/smarthomeg4/MainZoneDetailsActivity.java=UTF-8
+encoding//src/com/roka/smarthomeg4/adapter/LightsAdapter.java=UTF-8
+encoding//src/com/roka/smarthomeg4/adapter/SatChannelAdapter.java=UTF-8
+encoding//src/com/roka/smarthomeg4/frag/HVACFragment.java=UTF-8
+encoding//src/com/roka/smarthomeg4/frag/LightFragment.java=UTF-8
+encoding//src/com/roka/smarthomeg4/udp_socket/FanUDPSocket.java=UTF-8
+encoding//src/com/roka/smarthomeg4/udp_socket/HVACUDPSocketConnection.java=UTF-8
+encoding//src/com/roka/smarthomeg4/udp_socket/LightSocketConnection.java=UTF-8
+encoding//src/com/roka/smarthomeg4/udp_socket/RGBSocket.java=UTF-8
+encoding//src/com/roka/smarthomeg4/udp_socket/ShadesAndSwitchUDPSocket.java=UTF-8
+encoding//src/com/roka/smarthomeg4/udp_socket/SmartSocketConnection.java=UTF-8
+encoding//src/com/roka/smarthomeg4/udp_socket/ZAudioUDBSocket.java=UTF-8

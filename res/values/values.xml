@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent">#BB000000</drawable>
+
+    <string name="clear_sd_title">Clear TEMP data for SD card </string>
+    <string name="clear_ftp_title">Clear TEMP data for FTP </string>
+    <string name="update_ftp_title">Update FTP </string>
+    <string name="clear_sd_details">if the songs on SD card have any change , the temporary data for SD card needs to be cleard and read again .</string>
+    <string name="clear_ftp_details">if songs on FTP server have any change , the temporary data for FTP needs to be cleard and read again  </string>
+    <string name="update_ftp_details">Tell Z-Audio to update albums and songs list from FTP server.</string>
+	<string name="settings_activity_titles">Settings </string>
+	<string name="network_settings_btn">Network Settings</string>
+	<string name="database_upload">Database Upload And Download</string>
+	<string name="language_setting">Language Settings </string>
+	<string name="Zone_settings">Zone Settings</string>
+	<string name="version">Vsersion 1.0.0</string>
+	<string name="musicTitle">Please Choose Zones! </string>
+	<string name="record_btn_title">Record</string>
+	<string name="delete_text">Delete</string>
+	<string name="preview_text">Preview</string>
+	<string name="stop_text">Stop</string>
+	<string name="upload_ftp_text">Upload To FTP</string>
+</resources>

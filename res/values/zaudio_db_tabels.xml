@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="db_albums" translatable="false">        CREATE TABLE albums(
+        zone INTEGER, 
+  no INTEGER, 
+  name TEXT, 
+  packageno INT, 
+  packagesongno INTEGER,
+  source INTEGER
+  );</string>
+    <string name="db_song" translatable="false">        CREATE TABLE songs(
+        zone INTEGER,
+          no INTEGER, 
+  noh INTEGER, 
+   nol INTEGER, 
+  name TEXT,
+   source INTEGER
+ );</string>
+
+</resources>

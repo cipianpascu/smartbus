@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/titleimg" >
+
+            <ImageView
+                android:id="@+id/backImageView"
+                 android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/zoneNametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <ImageView
+                android:id="@+id/mainImageViewChange"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <!-- <FrameLayout -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- > -->
+
+        <ImageView
+            android:id="@+id/sdCardImageView"
+            android:layout_width="@dimen/selected_image_z_audio_width"
+            android:layout_height="@dimen/image_z_audio_high"
+            android:scaleType="fitXY" />
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="right" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="SD Card" /> -->
+
+
+        <!-- </FrameLayout> -->
+
+        <ImageView
+            android:id="@+id/networkImageView"
+            android:layout_width="@dimen/un_selected_image_z_audio_width"
+            android:layout_height="@dimen/image_z_audio_high"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/radioImageView"
+            android:layout_width="@dimen/un_selected_image_z_audio_width"
+            android:layout_height="@dimen/image_z_audio_high"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/soundImageView"
+            android:layout_width="@dimen/un_selected_image_z_audio_width"
+            android:layout_height="@dimen/image_z_audio_high"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/sdcardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/zoneNameButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cancel"
+                android:text="CEO Office"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/album_list_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cancel"
+                android:text="Album List"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cancel"
+                android:text="Add To QUE"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp" >
+
+            <Button
+                android:id="@+id/playMoodbutton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/songplaymode1" />
+
+            <Button
+                android:id="@+id/eqlizerButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/zmusicsetup" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/zonebtnbg2"
+                        android:gravity="left"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/previousButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/player_landscape_btn_previous_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/zonebtnbg"
+                        android:gravity="right" >
+
+                        <Button
+                            android:id="@+id/nextButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/player_landscape_btn_next_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/zonebtnbg2"
+                        android:gravity="left" >
+
+                        <Button
+                            android:id="@+id/stopButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/icons_11" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="55dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/zonebtnbg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tvbtnbg"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/playButton"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/play"
+                        android:gravity="center" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linearLayout2"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/caidanbeijing" >
+
+            <ListView
+                android:id="@+id/songsListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp" >
+            </ListView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/volumButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:background="@drawable/vol" />
+
+        <com.roka.smarthomeg4.helper.VerticalSeekBar
+            android:id="@+id/vertical_Seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="150dip"
+            android:layout_above="@+id/volumButton"
+            android:layout_alignLeft="@+id/volumButton"
+            android:layout_marginBottom="10dp"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/slider_thum3"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/networkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/radioLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/soundInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/audioin" />
+    </RelativeLayout>
+
+</LinearLayout>
